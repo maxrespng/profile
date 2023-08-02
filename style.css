@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(27, 95, 255);
+  cursor: url() 16 0, pointer;
+}
+
+h1 {
+  font-family: 'Caprasimo', cursive;
+  font-size: 3em;
+  color: black;
+  line-height: 0.9em;
+}
+
+.text-box {
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight:200;
+}
+
+img {
+  width: 60%;
+  max-height: 60%;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+ }
+
+ i {
+  font-size: 6em;
+  color: red;
+  letter-spacing: 50px;
+ }
+
+ .card-white {
+  background: white;
+  margin: 15px;
+  padding: 30px;
+  border: 7px solid black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+ }
+
+ .card-white:hover {
+  transform:translateY(-12px);
+  transition: 0.3s;
+  box-shadow: 0px 10px;
+ }
+
+ .card-white i {
+  order: 1;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: space-evenly;
+ }
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  /* TRYING FLEX STUFF BELOW: */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+@media (max-width: 1000px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 600px;
+    margin: 0 auto;
+   }
+}
+
+@media (max-width: 650px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+   }
+}
+
+#job-status {
+  order: 4;
+}
+
+#intro-card {
+  order: 3;
+}
+
+#yellow-button:hover {
+  /* order: 2; */
+  background-color: gold;
+}
+
+#green-button:hover {
+  /* order: 2; */
+  background-color: rgb(3, 202, 0);
+}
+
+#about-me-copy {
+  order: 1;
+}
+
+#about-me-copy:hover {
+  background-color: rgb(255, 141, 240);
+}
+
+#purple-button:hover {
+  background-color: rgb(183, 0, 255);
+}
+
+#orange-button:hover {
+  background-color: rgb(255, 119, 0);
+}
+
+#red-button:hover {
+  background-color: rgb(255, 0, 0);
+}
